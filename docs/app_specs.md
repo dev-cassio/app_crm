@@ -1,5 +1,7 @@
 # Especificações do Produto - CRM
 
+> **Aviso:** documento derivado do material base original (inclui rotas e detalhes de interface que o MVP atual **não** usa como fonte única). Para **escopo, permissões e regras do MVP**, prevalecem **[`first_prd.md`](first_prd.md)** e **[`checklist_pre_codigo.md`](checklist_pre_codigo.md)**. Use este arquivo como contexto histórico ou para ideias, não como contrato de implementação.
+
 ## 1. Visão Geral do Produto
 
 O produto é um sistema CRM (Customer Relationship Management) web especializado na gestão de leads e clientes. A proposta central é organizar o funil de vendas através de um pipeline visual (Kanban), permitindo que equipes de vendas acompanhem oportunidades desde o primeiro contato até o fechamento. O sistema também oferece cadastro detalhado de clientes, anexação de documentos, relatórios analíticos e ferramentas de comunicação como envio de e-mails para aniversariantes.

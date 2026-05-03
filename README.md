@@ -2,12 +2,23 @@
 
 Base Django para projeto de gestão empresarial (CRM).
 
+**Status:** projeto **em desenvolvimento** — o MVP descrito em `docs/first_prd.md` ainda não está concluído; APIs, telas e regras podem mudar até o primeiro release estável.
+
+## Documentação de produto e pré-código
+
+- **Índice:** [`docs/README.md`](docs/README.md)
+- **PRD do MVP (referência principal):** [`docs/first_prd.md`](docs/first_prd.md)
+- **Decisões técnicas e checklist pré-sprint:** [`docs/checklist_pre_codigo.md`](docs/checklist_pre_codigo.md)
+
 ## Stack técnica
 
 - Python: `>=3.14,<4.0`
 - Django: `>=6.0.3,<7.0`
-- Banco padrão: SQLite
-- PostgreSQL opcional: `postgres:17.6-bookworm` via Docker Compose
+- Interface: **Bootstrap 5** em templates Django (SSR)
+- Banco em desenvolvimento: **SQLite** (padrão)
+- Banco alvo em **produção:** **PostgreSQL** — `postgres:17.6-bookworm` via Docker Compose no ambiente local
+- Estáticos em deploy containerizado: **WhiteNoise** (planejado; ver `docs/checklist_pre_codigo.md`)
+- Uploads (`MEDIA`): disco local; em Docker usar **volume persistente** no `MEDIA_ROOT` (sem S3 na fase inicial)
 - Ambiente/dependências: `uv`
 - Lint/format Python: `ruff`
 - Lint/format templates: `djlint`
